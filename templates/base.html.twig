@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>{% block title %}Chocolate bank{% endblock %}</title>
+    {% block stylesheets %}
+        {# 'app' must match the first argument to addEntry() in webpack.config.js #}
+        {{ encore_entry_link_tags('app') }}
+
+    {% endblock %}
+</head>
+
+
+{% block header %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Chocolate bank</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav nav-flex ml-auto">
+                {% if app.user %}
+                <li><a href="#" class="navbar-brand">
+                Profile
+                </a>
+                </li>
+                <li>
+                <a href="{{ path('employment') }}" class="navbar-brand">
+                Home
+                </a>
+                </li>
+                <li><a href="{{ path('app_logout') }}" class="navbar-brand">Logout</a>
+                </li>
+                {% else %}
+                <li><a href="{{ path('app_register') }}">REGISTER</a>
+                </li>
+                <li><a href="{{ path('app_login') }}">LOGIN</a>
+                </li>
+                {% endif %}
+
+            </ul>
+        </div>
+    </nav>
+{% endblock %}
+<div class="container body-container">
+    {% block body %}
+        <div class="row">
+            <div id="main" class="col-sm-9">
+                {% block main %}{% endblock %}
+            </div>
+        </div>
+    {% endblock %}
+</div>
+<body id="{% block body_id %}{% endblock %}">
+{% block footer %}
+    <footer class="page-footer font-small bg-dark text-white">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+
+    <!-- Renders app.js & a webpack runtime.js file
+        <script src="/build/runtime.js"></script>
+        <script src="/build/app.js"></script> -->
+{% endblock %}
+
+</body>
+</html>

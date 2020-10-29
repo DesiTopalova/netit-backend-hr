@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+<div class="container body-content">
+    <div class="row">
+        {% for employment in employment %}
+        <div class="col-md-6">
+            <article>
+                <header>
+                    <h2>{{ employment.title }}</h2>
+                </header>
+
+                <p>
+                    {{ employment.content }}
+                </p>
+
+                <small class="author">
+                  {# {{ employment.addedOn }}#}
+                </small>
+                <div class="pull-right">
+                    <a class="btn btn-default btn-xs"
+                       href="{{ path('app_employment_viewsingle', {'id':employment.id}) }}">Read more &raquo;</a>
+                </div>
+            </article>
+        </div>
+    </div>
+            </div>
+{% endfor %}
+{% endblock %}
