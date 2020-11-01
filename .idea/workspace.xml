@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c760f791-3670-4af2-a5cd-a31cbf1b1538" name="Default Changelist" comment="" />
+    <list default="true" id="c760f791-3670-4af2-a5cd-a31cbf1b1538" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/netit-backend-hr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/netit-backend-hr.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/EmploymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/EmploymentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/LoginType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/LoginType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/LoginAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/LoginAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/employment/employment_view.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/employment/employment_view.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/employment/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/employment/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,7 +29,10 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
       <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
@@ -116,9 +137,11 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
       <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gr77tipkBxu8ZHFxizIxJ6RZ3W" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -127,7 +150,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bin/console" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
@@ -140,6 +163,11 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\netit-backend-hr\templates\home" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="server:run" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/bin/console" scriptParameters="server:run">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -158,6 +186,10 @@
       <workItem from="1603090380085" duration="26203000" />
       <workItem from="1603904913924" duration="4854000" />
       <workItem from="1603974597736" duration="6000" />
+      <workItem from="1603975530406" duration="12000" />
+      <workItem from="1603975550737" duration="183000" />
+      <workItem from="1603975799386" duration="6054000" />
+      <workItem from="1604223007536" duration="6997000" />
     </task>
     <servers />
   </component>
@@ -165,14 +197,18 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="330" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601284933195">
+    <state x="582" y="98" key="#PHP" timestamp="1603975684249">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="330" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1474.864@0.0.1474.864" timestamp="1601284933195" />
-    <state x="543" y="114" key="#com.intellij.ide.util.MemberChooser" timestamp="1601025269199">
+    <state x="582" y="98" key="#PHP/0.0.1474.864@0.0.1474.864" timestamp="1603975684249" />
+    <state x="330" y="91" width="1089" height="727" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603975692474">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="543" y="114" key="#com.intellij.ide.util.MemberChooser/0.0.1474.864@0.0.1474.864" timestamp="1601025269199" />
+    <state x="330" y="91" width="1089" height="727" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1474.864@0.0.1474.864" timestamp="1603975692474" />
+    <state x="543" y="114" key="#com.intellij.ide.util.MemberChooser" timestamp="1604229535515">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="543" y="114" key="#com.intellij.ide.util.MemberChooser/0.0.1474.864@0.0.1474.864" timestamp="1604229535515" />
     <state x="468" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601972844773">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
@@ -181,13 +217,29 @@
       <screen x="0" y="0" width="1474" height="864" />
     </state>
     <state x="751" y="220" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1474.864@0.0.1474.864" timestamp="1603467515361" />
-    <state x="801" y="220" key="FileChooserDialogImpl" timestamp="1603091413341">
+    <state x="801" y="220" key="FileChooserDialogImpl" timestamp="1603975671057">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="801" y="220" key="FileChooserDialogImpl/0.0.1474.864@0.0.1474.864" timestamp="1603091413341" />
-    <state x="792" y="188" key="NewPhpClassDialog" timestamp="1601974041132">
+    <state x="801" y="220" key="FileChooserDialogImpl/0.0.1474.864@0.0.1474.864" timestamp="1603975671057" />
+    <state width="1431" height="224" key="GridCell.Tab.0.bottom" timestamp="1604073975316">
       <screen x="0" y="0" width="1474" height="864" />
     </state>
-    <state x="792" y="188" key="NewPhpClassDialog/0.0.1474.864@0.0.1474.864" timestamp="1601974041132" />
+    <state width="1431" height="224" key="GridCell.Tab.0.bottom/0.0.1474.864@0.0.1474.864" timestamp="1604073975316" />
+    <state width="1431" height="224" key="GridCell.Tab.0.center" timestamp="1604073975316">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="224" key="GridCell.Tab.0.center/0.0.1474.864@0.0.1474.864" timestamp="1604073975316" />
+    <state width="1431" height="224" key="GridCell.Tab.0.left" timestamp="1604073975316">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="224" key="GridCell.Tab.0.left/0.0.1474.864@0.0.1474.864" timestamp="1604073975316" />
+    <state width="1431" height="224" key="GridCell.Tab.0.right" timestamp="1604073975316">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="224" key="GridCell.Tab.0.right/0.0.1474.864@0.0.1474.864" timestamp="1604073975316" />
+    <state x="792" y="188" key="NewPhpClassDialog" timestamp="1604229519593">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="792" y="188" key="NewPhpClassDialog/0.0.1474.864@0.0.1474.864" timestamp="1604229519593" />
   </component>
 </project>

@@ -16,6 +16,17 @@
         {{ form_row(registrationForm.plainPassword, {
             label: 'Password'
         }) }}
+    <div class="form-group center-block">
+        <div class="col-sm-4 col-sm-offset-4">
+            <label>You are:</label>
+            <select name="role[name]">
+                <option value="role_user">Employee</option>
+                <option value="role_employer">Employer</option>
+                <option value="role_hr">HR</option>
+                <option value="role_admin">Admin</option>
+            </select>
+        </div>
+    </div>
         {{ form_row(registrationForm.agreeTerms) }}
 
         <button type="submit" class="btn">Register</button>

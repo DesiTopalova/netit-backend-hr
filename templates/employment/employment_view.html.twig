@@ -13,12 +13,13 @@
                     </p>
 
                     <small class="author">
-                        {{ employment.addedOn }}
+                        {{ employment.addedOn|date('d.m.Y') }}
                     </small>
 
                     <footer>
                         <div class="pull-right">
                             <a class="btn btn-default btn-xs" href="{{ path('employment') }}">back &raquo;</a>
+                            <a class="btn btn-default btn-xs" href="#">Apply</a>
                         </div>
                     </footer>
                 </article>

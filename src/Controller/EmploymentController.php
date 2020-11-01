@@ -4,6 +4,8 @@ namespace App\Controller;
 
 use App\Entity\Employment;
 use App\Form\EmploymentType;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -13,6 +15,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class EmploymentController extends AbstractController
 {
     /**
+     * @IsGranted("ROLE_USER")
      * @Route("/employment", name="employment")
      */
     public function home()
@@ -21,8 +24,11 @@ class EmploymentController extends AbstractController
        return $this->render('employment/index.html.twig', ['employment'=>$employment]);
     }
 
+
+
    /**
-     * @Route ("/employment/{id}", "employment_view")
+     * @IsGranted("ROLE_USER")
+     * @Route ("/employment/{id}", name="employment_view")
      * @param $id
      * @return Response
      */
@@ -38,16 +44,16 @@ class EmploymentController extends AbstractController
      */
     public function create(Request $request):Response {
 
-$employment=new Employment();
-$form=$this->createForm(EmploymentType::class,$employment);
-$form->handleRequest($request);
+        $employment=new Employment();
+        $form=$this->createForm(EmploymentType::class,$employment);
+        $form->handleRequest($request);
 
-if($form->isSubmitted()&&$form->isValid()){
-    $entityManager = $this->getDoctrine()->getManager();
-    $entityManager->persist($employment);
-    $entityManager->flush();
-    return $this->redirectToRoute('employment');
-}
+        if($form->isSubmitted()&&$form->isValid()){
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->persist($employment);
+            $entityManager->flush();
+            return $this->redirectToRoute('employment');
+        }
         return $this->render('employment/create.html.twig', [
             'form' => $form->createView(),
         ]);
